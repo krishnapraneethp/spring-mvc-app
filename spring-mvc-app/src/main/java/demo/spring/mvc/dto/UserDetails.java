@@ -6,15 +6,15 @@ public class UserDetails implements Serializable {
 
 	private static final long serialVersionUID = -7240791916052750044L;
 
-	private Integer userid;
+	private String userid;
 	private String username;
 	private String password;
 	private String emailId;
 	
-	public Integer getUserid() {
+	public String getUserid() {
 		return userid;
 	}
-	public void setUserid(Integer userid) {
+	public void setUserid(String userid) {
 		this.userid = userid;
 	}
 	public String getUsername() {
