@@ -20,8 +20,8 @@ public class WelcomeController {
 	@RequestMapping(method=RequestMethod.GET)
 	public String hello(final Model model) {
 		userDetails.setUserid(UUID.randomUUID().toString());
-		model.addAttribute("userid",userDetails.getUserid());
-		return "hello-world";
+		model.addAttribute("UserDetails",userDetails);
+		return "login";
 		
 	}
 }
